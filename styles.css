@@ -41,7 +41,7 @@ header {
     align-items: center;
     background-image: url(images/swiss-valley.jpg);
     text-align: center;
-    padding: 2rem 0 1rem;
+    padding: 2rem 0 5rem;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     box-shadow: 0 0 10px;
@@ -70,10 +70,14 @@ p {
 }
 
 /* Navigation Styling */
+nav {
+  margin-top: 0;
+  padding-bottom: 3rem;
+}
+
 nav ul {
     display: flex;
     justify-content: center;
-    padding: 0;
     gap: 5rem;
     list-style: none;
 }
