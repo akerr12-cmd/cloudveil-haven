@@ -9,6 +9,8 @@
     --blue: #3498db;
     --white: #fff;
 
+    --fonts: "raleway", "merriweather", sans-serif;
+
 }
 
 body {
@@ -16,7 +18,7 @@ body {
     min-height: 100vh;
     width: 1440px;
     margin: 0 auto;
-    font-family: "proxima-nova", sans-serif;
+    font-family: var(--fonts);
     line-height: 1.6;
     color: #333;
     padding: 0 1rem;
@@ -56,12 +58,12 @@ header h1 {
 h1,
 h2 {
     color: var(--fjord);
-    font-family: raleway, sans-serif;
+    font-family: var(--fonts);
 }
 
 p {
     color: var(--fjord);
-    font-family: merriweather, serif;
+    font-family: var(--fonts);
     font-size: 18px;
     margin-bottom: 1.5rem;
     text-align: center;
@@ -79,7 +81,7 @@ nav ul {
 nav a {
     text-decoration: none;
     color: var(--fjord);
-    font-family: raleway, sans-serif;
+    font-family: var(--fonts);
     font-size: 2rem;
     font-weight: bolder;
     transition: color 0.3s ease;
@@ -101,7 +103,7 @@ nav a:hover {
 .intro h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #34495e;
+    color: var(--fjord);
 }
 
 /* Content Section */
@@ -140,7 +142,7 @@ nav a:hover {
 .group1 p,
 .group2 p {
     font-size: 1rem;
-    color: #666;
+    color: var(--fjord);
 }
 
 
@@ -152,7 +154,7 @@ nav a:hover {
 }
 
 .contact_us h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     color: var(--fjord);
 }
@@ -195,7 +197,7 @@ nav a:hover {
 
 form label {
     font-weight: bold;
-    color: #2c3e50;
+    color: var(--fjord);
     text-align: left;
     margin-bottom: -0.5rem;
 }
@@ -251,7 +253,7 @@ fieldset {
 }
 
 legend {
-    font-family: var(--font-family);
+    font-family: var(--fonts);
     font-weight: bold;
     margin-bottom: 0.5rem;
     color: var(--fjord);
