@@ -59,6 +59,7 @@ h1,
 h2 {
     color: var(--fjord);
     font-family: var(--fonts);
+    text-align: center;
 }
 
 p {
@@ -66,7 +67,6 @@ p {
     font-family: var(--fonts);
     font-size: 18px;
     margin-bottom: 1.5rem;
-    text-align: center;
 }
 
 /* Navigation Styling */
@@ -101,7 +101,6 @@ nav a:hover {
 .intro {
     max-width: 800px;
     margin: 2rem auto;
-    text-align: center;
 }
 
 .intro h2 {
@@ -143,18 +142,10 @@ nav a:hover {
     text-align: center;
 }
 
-.group1 p,
-.group2 p {
-    font-size: 1rem;
-    color: var(--fjord);
-}
-
-
 /* Contact Section */
 .contact_us {
     max-width: 800px;
     margin: 2rem auto;
-    text-align: center;
 }
 
 .contact_us h2 {
@@ -164,6 +155,8 @@ nav a:hover {
 }
 
 .contact_us img {
+    display: block;
+    margin: auto;
     width: 100%;
     max-width: 600px;
     height: auto;
