@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags and title element -->
+    <meta charset="utf-8">
+    <title>CloudVeil Haven Resort | Contact</title>
+    <meta name="author" content="Amanda Kerr">
+    <meta name="description" content="Contact Information for CloudVeil Haven Resort">
+    <!-- Favicon -->
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/veq6qrp.css">
+    <!-- Link to Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>CloudVeil Haven Resort</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Accommodations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact_us">
+            <h2>Contact Us</h2>
+            <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation
+                with us! Required fields are marked with a *.</p>
+            <img src="images/swiss-sunset.jpg" alt="CloudVeil Haven resort during the sunset">
+
+            <div id="form-section">
+                <form action="submit-form.php" method="post">
+                    <div class="fillable">
+                        <!-- Full Name -->
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full-name" required>
+
+                        <!-- Email Address -->
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <!-- Phone Number -->
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="select">
+                        <!-- Preferred Contact Method -->
+                        <fieldset>
+                            <legend>Preferred Contact Method:</legend>
+                            <label>
+                                <input type="radio" name="contact-method" value="email" required>
+                                Email
+                            </label>
+                            <label>
+                                <input type="radio" name="contact-method" value="phone">
+                                Phone
+                            </label>
+                        </fieldset>
+
+                        <!-- Comments -->
+                        <label for="comments">Comments:</label>
+                        <textarea id="comments" name="comments" rows="4" required></textarea>
+
+                        <!-- Submit Button -->
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cloudveil Haven. All rights reserved.</p>
+        <p>This site is for educational purposes only</p>
+    </footer>
+</body>
+
+</html>

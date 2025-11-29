@@ -1,0 +1,296 @@
+:root {
+
+    --fjord: #3c446c;
+    --apricot: #ec867f;
+    --granny-apple: #cff4e0;
+    --alpine: #af9235;
+    --quicksand: #ba9d88;
+    --east-bay: #3e4176;
+    --blue: #3498db;
+    --white: #fff;
+
+}
+
+body {
+    background: linear-gradient(to bottom, #216a24, #a5d2fc);
+    min-height: 100vh;
+    width: 1440px;
+    margin: 0 auto;
+    font-family: "proxima-nova", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 0 1rem;
+}
+
+main {
+    border: 2px solid var(--fjord);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+    background-color: var(--granny-apple);
+    box-shadow: 0 0 10px;
+    border-radius: 8px;
+}
+
+/* Header Layout */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/swiss-valley.jpg);
+    text-align: center;
+    padding: 2rem 0 1rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 0 10px;
+
+}
+
+header h1 {
+    font-size: 5rem;
+    margin: 1rem;
+    color: var(--fjord);
+    font-weight: bold;
+}
+
+h1,
+h2 {
+    color: var(--fjord);
+    font-family: raleway, sans-serif;
+}
+
+p {
+    color: var(--fjord);
+    font-family: merriweather, serif;
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Navigation Styling */
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 5rem;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--fjord);
+    font-family: raleway, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--apricot);
+    text-shadow: 2px 2px 4px;
+
+}
+
+/* Intro Section */
+.intro {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #34495e;
+}
+
+/* Content Section */
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 1000px;
+}
+
+.group1,
+.group2 {
+    flex: 1 1 45%;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.group1 img,
+.group2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.group1 h3,
+.group2 h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--fjord);
+    text-align: center;
+}
+
+.group1 p,
+.group2 p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+/* Contact Section */
+.contact_us {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.contact_us h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--fjord);
+}
+
+.contact_us img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px;
+}
+
+/* Form Section Layout */
+#form-section form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+/* Column Containers */
+.fillable,
+.select {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Form Section */
+#form-section {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    border: 2px solid var(--fjord);
+    background-color: var(--white);
+    box-shadow: 0 0 10px;
+    border-radius: 8px;
+}
+
+form label {
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: left;
+    margin-bottom: -0.5rem;
+}
+
+form label:after {
+    content: " *";
+    color: red;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid var(--fjord);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus {
+    border-color: var(--quicksand);
+    background-color: var(--granny-apple);
+}
+
+form input[type="text"]:hover,
+form input[type="email"]:hover,
+form input[type="tel"]:hover {
+    box-shadow: 0 0 10px var(--apricot);
+}
+
+
+form textarea {
+    border: 1px solid var(--fjord);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form textarea:focus {
+    border-color: var(--quicksand);
+    background-color: var(--granny-apple);
+}
+
+form textarea:hover {
+    box-shadow: 0 0 10px var(--apricot);
+}
+
+fieldset {
+
+    text-align: left;
+    background-color: var(--white)
+}
+
+legend {
+    font-family: var(--font-family);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--fjord);
+}
+
+fieldset label {
+    display: inline-block;
+    margin-right: 1.5rem;
+    font-weight: normal;
+}
+
+input[type="radio"]:checked {
+    accent-color: var(--apricot);
+}
+
+textarea {
+    resize: none;
+}
+
+button[type="submit"] {
+    align-self: flex-start;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--apricot);
+    color: var(--fjord);
+}
+
+/* Footer Contact Page*/
+footer {
+    text-align: center;
+    padding: 1rem;
+}
